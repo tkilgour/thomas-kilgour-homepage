@@ -1,8 +1,8 @@
 <template>
-  <div class="layout">
-    <header class="header">
+  <div class="container mx-auto px-4">
+    <header class="header py-8">
       <g-link class="heading-link" :to="{ name: 'home' }">
-        <component :is="titleTag" class="heading">{{ config.siteName }}</component>
+        <!-- <component :is="titleTag" class="heading">{{ config.siteName }}</component> -->
       </g-link>
     </header>
     <slot/>

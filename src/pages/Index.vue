@@ -1,7 +1,7 @@
 <template>
   <Layout class="home">
-    <ul>
-      <li v-for="{ node } in $page.allBlogPost.edges" :key="node._id">
+    <ul class="list-reset">
+      <li v-for="{ node } in $page.allBlogPost.edges" :key="node.someid">
         <router-link :to="node.path">
           <h2 v-html="node.title"/>
         </router-link>
@@ -17,10 +17,9 @@
     allBlogPost (page: $page) {
       edges {
         node {
-          _id
+          id
           title
-          date (format: "D MMMM, YYYY")
-          description
+          date (format: "MMMM D, YYYY")
           path
         }
       }

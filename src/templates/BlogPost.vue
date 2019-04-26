@@ -1,9 +1,8 @@
 <template>
   <Layout>
     <article class="article">
-      <h1>{{ $page.blogPost.title }}</h1>
+      <h1 class="mar">{{ $page.blogPost.title }}</h1>
       <span>{{ $page.blogPost.date }}</span>
-      <g-image v-if="$page.blogPost.image" :src="$page.blogPost.image"/>
       <div class="content" v-html="$page.blogPost.content" />
     </article>
   </Layout>
@@ -25,7 +24,6 @@ export default {
       title
       date (format: "D MMMM, YYYY")
       content
-      image
     }
   }
 </page-query>

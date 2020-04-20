@@ -18,6 +18,7 @@
       edges {
         node {
           id
+          slug
           title
           date (format: "MMMM D, YYYY")
           path

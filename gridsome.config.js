@@ -18,8 +18,7 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'blog/*.md',
-        typeName: 'BlogPost',
-        route: '/:slug'
+        typeName: 'BlogPost'
       }
     },
     {
@@ -31,5 +30,9 @@ module.exports = {
         publicPath: `/admin`
       }
     }
-  ]
+  ],
+
+  templates: {
+    BlogPost: '/:slug'
+  }
 }

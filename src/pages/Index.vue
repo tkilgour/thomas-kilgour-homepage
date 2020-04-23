@@ -6,7 +6,7 @@
           <h2 v-html="node.title"/>
         </router-link>
         <span v-html="node.date"/>
-        <div v-html="node.description"/>
+        <div v-html="node.excerpt"/>
       </li>
     </ul>
   </Layout>
@@ -20,6 +20,7 @@
           id
           slug
           title
+          excerpt
           date (format: "MMMM D, YYYY")
           path
         }

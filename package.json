@@ -14,6 +14,8 @@
     "netlify-cms": "^2.9.1"
   },
   "devDependencies": {
-    "gridsome-plugin-tailwindcss": "^1.0.6"
+    "gridsome-plugin-tailwindcss": "^2.2.44",
+    "node-sass": "^4.14.0",
+    "sass-loader": "^8.0.2"
   }
 }

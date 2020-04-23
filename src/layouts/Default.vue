@@ -1,8 +1,8 @@
 <template>
-  <div class="container mx-auto px-4">
+  <div class="max-w-2xl px-4 mx-auto leading-normal text-lg">
     <header class="header py-8">
       <g-link class="heading-link" :to="{ name: 'home' }">
-        <!-- <component :is="titleTag" class="heading">{{ config.siteName }}</component> -->
+        Thomas Kilgour
       </g-link>
     </header>
     <slot/>
@@ -23,11 +23,3 @@ export default {
   }
 }
 </script>
-
-<style>
-@tailwind preflight;
-
-@tailwind components;
-
-@tailwind utilities;
-</style>

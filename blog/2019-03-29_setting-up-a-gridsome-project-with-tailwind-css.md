@@ -1,6 +1,7 @@
 ---
 title: Setting Up A Gridsome Project With Tailwind CSS
 date: 2019-03-29T12:51:49.776-0400
+excerpt: Setting up your Gridsome project with Tailwind CSS is extremely simple, thanks to gridsome-plugin-tailwindcss.
 slug: setting-up-a-gridsome-project-with-tailwind-css
 ---
 
@@ -12,7 +13,9 @@ Make sure you've set up your Gridsome project by following the [excellent docume
 
 Install the plugin as a dev dependency. No need to install Tailwind CSS separately, it's comes along as a dependency:
 
-`npm install gridsome-plugin-tailwindcss --save-dev`
+```
+npm install gridsome-plugin-tailwindcss --save-dev
+```
 
 Then add it to the plugins section of your config file:
 
@@ -45,11 +48,13 @@ plugins: [
 
 Create a new `tailwind.js` file at the root of your project:
 
-`npx tailwind init`
+```
+npx tailwind init
+```
 
 ## Inject Tailwind into CSS
 
-The last step to get Tailwind up and runnning is to inject it into your CSS using the `@tailwind` directive. An simple way to do this is to add it to th `<style>` tag of your default layout:
+The last step to get Tailwind up and runnning is to inject it into your CSS using the `@tailwind` directive. An simple way to do this is to add it to the `<style>` tag of your default layout:
 
 ```
 // ./src/layouts/Default.vue

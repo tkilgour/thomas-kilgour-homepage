@@ -29,6 +29,17 @@ module.exports = {
       options: {
         publicPath: `/admin`
       }
+    },
+    {
+      use: '@gridsome/source-graphql',
+      options: {
+        url: 'https://api.github.com/graphql',
+        fieldName: 'github',
+        typeName: 'Github',
+        headers: {
+          Authorization: `Bearer ${process.env.GITHUB_TOKEN}`
+        }
+      }
     }
   ],
 

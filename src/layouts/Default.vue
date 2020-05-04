@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-2xl px-4 mx-auto leading-normal text-lg min-h-screen relative">
-    <header class="py-8 mb-8 h-48">
+    <header class="py-8 mb-4 h-48">
       <g-link class="heading-link" to="/">
         <h1 class="text-4xl mb-6">
           Thomas Kilgour <span class="text-lg font-mono pl-2 text-blue-600">– Web Developer</span>

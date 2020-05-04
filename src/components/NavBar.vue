@@ -3,6 +3,7 @@
     <ul class="flex">
       <NavItem path="/blog">Blog</NavItem>
       <NavItem path="/projects">Projects</NavItem>
+      <NavItem path="/resume">CV</NavItem>
     </ul>
   </nav>
 </template>

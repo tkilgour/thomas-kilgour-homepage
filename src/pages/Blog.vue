@@ -1,5 +1,5 @@
 <template>
-  <Layout class="blog">
+  <Layout>
     <ul>
       <li v-for="{ node } in $page.allBlogPost.edges" :key="node.someid" class="mb-16">
         <router-link :to="node.path">

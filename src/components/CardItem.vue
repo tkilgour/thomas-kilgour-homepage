@@ -4,7 +4,7 @@
       <slot name="card-header"/>
     </div>
     <div class="pt-4">
-      <slot name="card-contents"/>
+      <slot />
     </div>
   </div>
 </template>

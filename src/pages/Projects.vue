@@ -1,19 +1,27 @@
 <template>
   <Layout>
-    <div v-for="project in projects" :key="project.id" class="mb-8">
-      <h2 class="text-3xl">
-        <a :href="project.url">{{ project.name }}</a>
-      </h2>
+    <CardItem v-for="project in projects" :key="project.id" class="mb-8">
+      <template #card-header>
+        <h2 class="text-xl">
+          <a :href="project.url">{{ project.name }}</a>
+        </h2>
+      </template>
       <ul v-if="project.tags" class="flex mb-4">
         <li v-for="tag in project.tags" :key="tag" class="mr-2 text-sm bg-indigo-100 px-1 rounded-lg">{{ tag }}</li>
       </ul>
       <p v-if="project.description">{{ project.description }}</p>
-    </div>
+    </CardItem>
   </Layout>
 </template>
 
 <script>
+import CardItem from '~/components/CardItem'
+
 export default {
+  components: {
+    CardItem
+  },
+  
   computed: {
     projects() {
       return this.$page.github.viewer.pinnedItems.edges.map(project => {

@@ -1,11 +1,9 @@
 <template>
-  <div class="max-w-2xl px-4 mx-auto leading-normal text-lg min-h-screen relative">
+  <div class="max-w-4xl px-4 mx-auto leading-normal text-lg min-h-screen relative">
     <header class="py-8 mb-4 h-48">
-      <g-link class="heading-link" to="/">
-        <h1 class="text-4xl mb-6">
-          Thomas Kilgour <span class="text-lg font-mono pl-2 text-blue-600">– Web Developer</span>
-        </h1>
-      </g-link>
+      <h1 class="text-4xl mb-6">
+        <g-link to="/">Thomas Kilgour</g-link> <span class="text-lg font-mono pl-2 text-blue-600">– Web Developer</span>
+      </h1>
       <NavBar />
     </header>
     <main class="pb-48">

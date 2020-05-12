@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>404 – Page not found</h1>
+  <Layout>
+    <h1 class="text-3xl">404 – Page not found</h1>
     <p>Whoops, looks like this page doesn't exist.</p>
-  </div>
+  </Layout>
 </template>

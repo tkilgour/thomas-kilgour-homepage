@@ -1,6 +1,6 @@
 ---
 title: Setting Up A Gridsome Project With Tailwind CSS
-date: 2019-03-29T12:51:49.776-0400
+date: 2019-03-29T16:51:49.776Z
 excerpt: Setting up your Gridsome project with Tailwind CSS is extremely simple, thanks to gridsome-plugin-tailwindcss.
 slug: setting-up-a-gridsome-project-with-tailwind-css
 ---

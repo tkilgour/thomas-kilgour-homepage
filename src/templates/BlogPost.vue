@@ -10,23 +10,28 @@
 
 <script>
 export default {
-  metaInfo () {
+  metaInfo() {
     return {
       title: this.$page.blogPost.title
-    }
+    };
   },
 
   computed: {
     blogPost() {
-      return this.$page.blogPost
+      return this.$page.blogPost;
     }
   }
-}
+};
 </script>
 
 <style lang="scss">
 .markdown {
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply leading-tight mt-12 mb-2;
   }
 

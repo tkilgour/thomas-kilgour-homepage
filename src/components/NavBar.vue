@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import NavItem from './NavItem'
+import NavItem from './NavItem';
 
 export default {
   components: {
     NavItem
   }
-}
+};
 </script>

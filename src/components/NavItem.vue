@@ -1,15 +1,15 @@
 <template>
-  <li class="mr-6 p-1 border-blue-600 ">
+  <li class="mr-6 p-1">
     <g-link
       v-if="!active"
       :to="path"
-      class="outline-none border-blue-600 hover:text-blue-600 hover:border-b-2 focus:text-blue-600 focus:border-b-2"
-      :class="{ 'border-dashed border-b-2' : active }"
+      class="pb-1 outline-none hover:border-b-2 focus:border-b-2 hover-color-secondary"
+      :class="{ 'border-dashed border-b-2': active }"
     >
       <slot />
     </g-link>
     <div v-else>
-      <span class="border-blue-600 border-dashed border-b-2">
+      <span class="border-dashed pb-1 border-b-2 border-color-secondary">
         <slot />
       </span>
     </div>
@@ -27,8 +27,8 @@ export default {
 
   computed: {
     active() {
-      return this.$route.path === this.path
+      return this.$route.path === this.path;
     }
   }
-}
+};
 </script>

@@ -1,5 +1,8 @@
 <template>
-  <a class="text-blue-600 underline" :href="href">
+  <a
+    class="underline outline-none focus-color-tertiary text-color-secondary"
+    :href="href"
+  >
     <slot />
   </a>
 </template>
@@ -12,5 +15,5 @@ export default {
       required: true
     }
   }
-}
+};
 </script>

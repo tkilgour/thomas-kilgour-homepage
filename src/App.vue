@@ -27,17 +27,19 @@ export default {
   },
 
   mounted() {
-    let theme = window.localStorage.getItem('theme');
-    if (!theme) {
-      theme =
-        window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches
-          ? 'dark'
-          : 'light';
-      window.localStorage.setItem('theme', theme);
-    }
+    if (process.isClient) {
+      let theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme =
+          window.matchMedia &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches
+            ? 'dark'
+            : 'light';
+        localStorage.setItem('theme', theme);
+      }
 
-    document.getElementById('app').setAttribute('data-theme', theme);
+      document.getElementById('app').setAttribute('data-theme', theme);
+    }
   }
 };
 </script>

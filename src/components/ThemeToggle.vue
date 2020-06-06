@@ -42,15 +42,19 @@ export default {
 
   methods: {
     checkTheme() {
-      this.darkMode = window.localStorage.getItem('theme') === 'dark';
+      if (process.isClient) {
+        this.darkMode = localStorage.getItem('theme') === 'dark';
+      }
     },
 
     toggleTheme() {
-      const theme =
-        window.localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
-      window.localStorage.setItem('theme', theme);
-      document.getElementById('app').setAttribute('data-theme', theme);
-      this.checkTheme();
+      if (process.isClient) {
+        const theme =
+          localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('theme', theme);
+        document.getElementById('app').setAttribute('data-theme', theme);
+        this.checkTheme();
+      }
     }
   },
 

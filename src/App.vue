@@ -27,14 +27,14 @@ export default {
   },
 
   mounted() {
-    let theme = localStorage.getItem('theme');
+    let theme = window.localStorage.getItem('theme');
     if (!theme) {
       theme =
         window.matchMedia &&
         window.matchMedia('(prefers-color-scheme: dark)').matches
           ? 'dark'
           : 'light';
-      localStorage.setItem('theme', theme);
+      window.localStorage.setItem('theme', theme);
     }
 
     document.getElementById('app').setAttribute('data-theme', theme);

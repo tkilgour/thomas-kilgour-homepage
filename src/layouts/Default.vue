@@ -12,9 +12,7 @@
             >– Web Developer</span
           >
         </h1>
-        <button class="absolute top-0 right-0 mt-8" @click="toggleTheme">
-          Toggle Theme
-        </button>
+        <ThemeToggle />
         <NavBar />
       </header>
       <main class="pb-48">
@@ -34,24 +32,18 @@
 <script>
 import NavBar from '~/components/NavBar';
 import NavItem from '~/components/NavItem';
+import ThemeToggle from '~/components/ThemeToggle';
 
 export default {
   components: {
     NavBar,
-    NavItem
+    NavItem,
+    ThemeToggle
   },
 
   computed: {
     titleTag() {
       return this.$route.name === 'home' ? 'h1' : 'h6';
-    }
-  },
-
-  methods: {
-    toggleTheme() {
-      const theme = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('theme', theme);
-      document.getElementById('app').setAttribute('data-theme', theme);
     }
   }
 };

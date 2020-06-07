@@ -1,6 +1,6 @@
 <template>
   <a
-    class="underline outline-none focus-color-tertiary text-color-secondary"
+    class="underline focus:outline-none focus-color-tertiary text-color-secondary"
     :href="href"
   >
     <slot />

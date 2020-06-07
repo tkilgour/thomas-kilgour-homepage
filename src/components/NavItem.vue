@@ -3,7 +3,7 @@
     <g-link
       v-if="!active"
       :to="path"
-      class="pb-1 outline-none hover:border-b-2 focus:border-b-2 hover-color-secondary"
+      class="pb-1 focus:outline-none hover:border-b-2 focus:border-b-2 hover-color-secondary"
       :class="{ 'border-dashed border-b-2': active }"
     >
       <slot />

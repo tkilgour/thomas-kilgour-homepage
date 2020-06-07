@@ -7,7 +7,7 @@
         class="mb-16"
       >
         <router-link
-          class="outline-none focus:underline hover:underline"
+          class="focus:outline-none focus:underline hover:underline"
           :to="node.path"
         >
           <h2 class="text-2xl relative">

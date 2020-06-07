@@ -1,5 +1,8 @@
 <template>
-  <button class="outline-none absolute top-0 right-0 mt-8" @click="toggleTheme">
+  <button
+    class="absolute top-0 right-0 mt-8 focus:outline-none"
+    @click="toggleTheme"
+  >
     <svg
       v-if="darkMode"
       xmlns="http://www.w3.org/2000/svg"

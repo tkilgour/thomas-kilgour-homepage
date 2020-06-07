@@ -5,7 +5,9 @@
     >
       <header class="py-8 mb-4 h-48 relative">
         <h1 class="text-4xl mb-6">
-          <g-link class="outline-none hover:underline focus:underline" to="/"
+          <g-link
+            class="focus:outline-none hover:underline focus:underline"
+            to="/"
             >Thomas Kilgour</g-link
           >
           <span class="text-lg font-mono pl-2 text-color-secondary"

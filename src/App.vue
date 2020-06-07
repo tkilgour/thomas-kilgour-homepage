@@ -63,31 +63,38 @@ export default {
 
 .bg-color-primary {
   background-color: var(--bg-color-primary);
+  transition: background-color 500ms ease;
 }
 
 .bg-color-secondary {
   background-color: var(--bg-color-secondary);
+  transition: background-color 500ms ease;
 }
 
 .text-color-primary {
   color: var(--text-color-primary);
+  transition: color 500ms ease;
 }
 
 .text-color-secondary {
   color: var(--text-color-secondary);
+  transition: color 500ms ease;
 }
 
 .hover-color-secondary:hover,
 .hover-color-secondary:focus {
   color: var(--text-color-secondary);
   border-color: var(--text-color-secondary);
+  transition: all 500ms ease;
 }
 
 .focus-color-tertiary:focus {
   color: var(--focus-color-tertiary);
+  transition: color 500ms ease;
 }
 
 .border-color-secondary {
   border-color: var(--text-color-secondary);
+  transition: background-color 500ms ease;
 }
 </style>

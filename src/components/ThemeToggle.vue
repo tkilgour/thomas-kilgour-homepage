@@ -46,7 +46,8 @@ export default {
   methods: {
     checkTheme() {
       if (process.isClient) {
-        this.darkMode = localStorage.getItem('theme') === 'dark';
+        this.darkMode =
+          document.getElementById('app').getAttribute('data-theme') === 'dark';
       }
     },
 

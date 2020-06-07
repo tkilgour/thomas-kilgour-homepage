@@ -1,5 +1,7 @@
 <template>
-  <router-view />
+  <div>
+    <router-view />
+  </div>
 </template>
 
 <static-query>
@@ -24,22 +26,6 @@ export default {
         }
       ]
     };
-  },
-
-  mounted() {
-    if (process.isClient) {
-      let theme = localStorage.getItem('theme');
-      if (!theme) {
-        theme =
-          window.matchMedia &&
-          window.matchMedia('(prefers-color-scheme: dark)').matches
-            ? 'dark'
-            : 'light';
-        localStorage.setItem('theme', theme);
-      }
-
-      document.getElementById('app').setAttribute('data-theme', theme);
-    }
   }
 };
 </script>

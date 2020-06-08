@@ -1,10 +1,10 @@
 <template>
   <div class="bg-color-primary">
     <div
-      class="max-w-4xl px-4 mx-auto leading-normal text-lg min-h-screen relative text-color-primary"
+      class="flex flex-col max-w-4xl px-4 mx-auto leading-normal text-lg min-h-screen relative text-color-primary"
     >
       <Header />
-      <main class="pb-48">
+      <main class="flex-grow">
         <slot />
       </main>
       <Footer />

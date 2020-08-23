@@ -3,6 +3,9 @@ module.exports = {
     extend: {
       colors: {
         'theme-bg': '#2A4365'
+      },
+      rotate: {
+        '-10': '-10deg'
       }
     }
   },

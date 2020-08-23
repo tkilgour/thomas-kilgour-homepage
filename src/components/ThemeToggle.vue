@@ -1,6 +1,7 @@
 <template>
   <button
     class="absolute flex justify-center items-end w-12 h-8 top-0 right-0 mt-6 text-color-primary overflow-hidden focus:outline-none"
+    aria-label="toggle theme"
     @click="toggleTheme"
   >
     <transition name="sunset">

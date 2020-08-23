@@ -1,6 +1,7 @@
 <template>
   <footer class="py-8">
     <ul class="flex justify-end">
+      <GetInTouch v-if="isHome" />
       <NavItem path="mailto:thomas@kilgour.co">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -72,10 +73,18 @@
 
 <script>
 import NavItem from '~/components/NavItem';
+import GetInTouch from '~/components/GetInTouch';
 
 export default {
   components: {
-    NavItem
+    NavItem,
+    GetInTouch
+  },
+
+  computed: {
+    isHome() {
+      return this.$route.name === 'home';
+    }
   }
 };
 </script>

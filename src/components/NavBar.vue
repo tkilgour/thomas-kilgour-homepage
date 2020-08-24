@@ -3,7 +3,7 @@
     <ul class="flex">
       <!-- <NavItem path="/blog">Blog</NavItem> -->
       <NavItem path="/projects">Projects</NavItem>
-      <NavItem path="/resume.pdf" download>Resume</NavItem>
+      <NavItem path="/Thomas%20Kilgour%20resume.pdf" download>Resume</NavItem>
     </ul>
   </nav>
 </template>

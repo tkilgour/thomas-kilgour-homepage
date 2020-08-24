@@ -81,10 +81,22 @@ export default {
     GetInTouch
   },
 
-  computed: {
-    showCTA() {
-      return this.$route.name === 'home' && window.innerWidth > 500;
+  data() {
+    return {
+      showCTA: false
+    };
+  },
+
+  methods: {
+    checkShowCTA() {
+      if (process.isClient) {
+        this.showCTA = this.$route.name === 'home' && window.innerWidth > 500;
+      }
     }
+  },
+
+  mounted() {
+    this.checkShowCTA();
   }
 };
 </script>

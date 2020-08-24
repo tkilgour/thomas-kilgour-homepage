@@ -1,8 +1,8 @@
 <template>
   <footer class="py-8">
     <ul class="flex justify-end">
-      <GetInTouch v-if="isHome" />
-      <NavItem path="mailto:thomas@kilgour.co">
+      <GetInTouch v-if="showCTA" />
+      <NavItem class="z-10" path="mailto:thomas@kilgour.co">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -20,7 +20,7 @@
           <path d="M22 6l-10 7L2 6" />
         </svg>
       </NavItem>
-      <NavItem path="https://github.com/tkilgour">
+      <NavItem class="z-10" path="https://github.com/tkilgour">
         <svg height="24" viewBox="0 0 16 16" width="24" aria-hidden="true">
           <title>Github</title>
           <path
@@ -31,7 +31,7 @@
           />
         </svg>
       </NavItem>
-      <NavItem path="https://twitter.com/tkilgour">
+      <NavItem class="z-10" path="https://twitter.com/tkilgour">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -49,7 +49,7 @@
           />
         </svg>
       </NavItem>
-      <NavItem path="https://linkedin.com/in/tkilgour">
+      <NavItem class="z-10" path="https://linkedin.com/in/tkilgour">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -82,8 +82,8 @@ export default {
   },
 
   computed: {
-    isHome() {
-      return this.$route.name === 'home';
+    showCTA() {
+      return this.$route.name === 'home' && window.innerWidth > 500;
     }
   }
 };

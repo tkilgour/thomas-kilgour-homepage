@@ -77,4 +77,8 @@ export default {
 .border-color-secondary {
   border-color: var(--text-color-secondary);
 }
+
+.bg-text-primary {
+  background-color: var(--text-color-secondary);
+}
 </style>

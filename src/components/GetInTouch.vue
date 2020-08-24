@@ -1,6 +1,8 @@
 <template>
   <div class="flex flex-col items-center absolute bottom-0 pr-4 mr-40 mb-8">
-    <p class="transform -rotate-10 font-mono text-2xl">
+    <p
+      class="transform -rotate-10 px-2 font-mono text-2xl text-white bg-text-primary"
+    >
       Get in touch!
     </p>
     <svg
